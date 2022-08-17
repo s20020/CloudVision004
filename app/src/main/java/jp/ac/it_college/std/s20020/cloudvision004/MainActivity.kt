@@ -112,32 +112,32 @@ class MainActivity : AppCompatActivity() {
                                     var wordText = ""
                                     for (symbol in word.asJsonObject["symbols"].asJsonArray) {
                                         wordText += symbol.asJsonObject["text"].asString
-                                        System.out.format(
-                                            "Symbol text: %s (confidence: %f)%n",
-                                            symbol.asJsonObject["text"].asString,
-                                            symbol.asJsonObject["confidence"].asFloat
-                                        )
+//                                        System.out.format(
+//                                            "Symbol text: %s (confidence: %f)%n",
+//                                            symbol.asJsonObject["text"].asString,
+//                                            symbol.asJsonObject["confidence"].asFloat
+//                                        )
                                     }
-                                    System.out.format(
-                                        "Word text: %s (confidence: %f)%n%n", wordText,
-                                        word.asJsonObject["confidence"].asFloat
-                                    )
-                                    System.out.format(
-                                        "Word bounding box: %s%n",
-                                        word.asJsonObject["boundingBox"]
-                                    )
+//                                    System.out.format(
+//                                        "Word text: %s (confidence: %f)%n%n", wordText,
+//                                        word.asJsonObject["confidence"].asFloat
+//                                    )
+//                                    System.out.format(
+//                                        "Word bounding box: %s%n",
+//                                        word.asJsonObject["boundingBox"]
+//                                    )
                                     paraText = String.format("%s%s ", paraText, wordText)
                                 }
                                 System.out.format("%nParagraph: %n%s%n", paraText)
-                                System.out.format(
-                                    "Paragraph bounding box: %s%n",
-                                    para.asJsonObject["boundingBox"]
-                                )
-                                System.out.format(
-                                    "Paragraph Confidence: %f%n",
-                                    para.asJsonObject["confidence"].asFloat
-                                )
-                                blockText += paraText
+//                                System.out.format(
+//                                    "Paragraph bounding box: %s%n",
+//                                    para.asJsonObject["boundingBox"]
+//                                )
+//                                System.out.format(
+//                                    "Paragraph Confidence: %f%n",
+//                                    para.asJsonObject["confidence"].asFloat
+//                                )
+//                                blockText += paraText
                             }
                             pageText += blockText
 
